@@ -2,8 +2,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;
+
 
 public class ToDo_List {
     private static List<String> currentList = new ArrayList<String>();
@@ -66,10 +65,7 @@ public class ToDo_List {
         Scanner scanner = new Scanner(System.in);
         String item = scanner.nextLine();
         currentList.add(item);
-        System.out.println("Enter time: ");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        showList();
+
     }
 
     public static void removeItem() {

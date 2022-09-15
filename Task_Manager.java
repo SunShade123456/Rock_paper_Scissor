@@ -149,7 +149,7 @@ public class Task_Manager {
         Random rand = new Random();
 
         while (true) {
-            System.out.println("Enter your choice: Rock | Paper | Scissor");
+            System.out.println("Enter your choice: 9-Exit | 0-Rock | 1-Paper | 2-Scissor");
             int userinput = sc.nextInt();
             if (userinput == 9)
                 break;
